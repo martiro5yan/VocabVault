@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pc/userpage.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile/userPage.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile/customselect.css')}}">
+    <title>Project Vocabulary</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <br>
+    <div class="nav">
+        <div class="navContainer">
+            <div class="navHref" onclick="activDictonaries()">CЛОВАРИ</div>
+            <div class="navHref" onclick="">ПРАКТИКА</div>
+        </div>
+    </div>
+    <br>
+    <div class="content">
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <div class="Container-Input">
+        <form class="form-Input" id="FormInput">
+            <br>
+            <textarea name="" id="inputText" placeholder="Начните писать текст"></textarea>
+            <textarea name="" id="translation" placeholder="Перевод"></textarea>
+        </form>
+        <div class="Container-Button">
+            <button class="btn"  onclick="">Перевести</button>
+            <button class="btn" onclick="add_word()">Добавить в словарь</button>
+        </div>
+    </div>
+    <div class="pc">
+        <div class="ContenToDay">
+            {% for i in dictionary %}
+                <span>{{i[0]}}</span>
+                <span>{{i[1]}}</span>
+            {% endfor %}
+        </div>
+    </div>
+    <br>
+
+    <br>
+
+
+
+
+
+    
+
+    <script src="static/js/userpage.js"></script>
+</body>
+</html>

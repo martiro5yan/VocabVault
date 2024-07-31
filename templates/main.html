@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile/main.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pc/main.css')}}">
+    <title>Project Vocabulary</title>
+</head>
+<body>
+    
+    <div class="Container-Input">
+        <div class="row">
+            <form class="Registration-Form" id="Registration-Form">
+                <div class="info">
+                    <p>Длина пароля и логина от 3 до 20 символов</p>
+                </div>
+                <input type="text" maxlength="20" autocomplete="new-password" placeholder="Имя пользователя">
+                <input type="password" maxlength="20" autocomplete="new-password"placeholder="Введите пароль">
+                <input type="password" maxlength="20" autocomplete="new-password" placeholder="Повторите пароль">
+            </form>
+            <button class="btn" id="btnRegistration" onclick="ActivatingForm('Registration-Form','Login-Form',this.id,'btnLogin')">Регистрация</button>
+            
+
+            <form class="Login-Form" id="Login-Form">
+                <input type="text" id="username" maxlength="20" placeholder="Имя пользователя">
+                <input type="password" maxlength="20" placeholder="Пароль">
+            </form>
+            <button class="btn" id="btnLogin" onclick="ActivatingForm('Login-Form','Registration-Form',this.id,'btnRegistration')">Вход</button>
+        </div>
+    </div>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/userpage.js"></script>
+</body>
+</html>

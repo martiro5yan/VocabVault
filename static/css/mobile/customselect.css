@@ -1,0 +1,60 @@
+@media (max-width: 500px){
+    .custom-select {
+        position: relative;
+        display: inline-block;
+        width: 80%; /* Ширина кастомного селекта */
+        
+    }
+
+    .select-selected {
+        margin-top: 10px;
+        height: 30px;
+        background-color: #121214;
+        color: aqua;
+        border-radius: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        box-sizing: border-box; /* Учитывает границы и отступы в общей ширине */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline-style: solid;
+        outline-color: aqua;
+        outline-width: thin;
+        
+        
+    }
+
+    .select-items {
+        position: absolute;
+        border-radius: 10px;
+        background-color: #ffffff;
+        width: 100%;
+        max-height: 200px; /* Максимальная высота для прокрутки */
+        overflow-y: auto; /* Вертикальная прокрутка */
+        box-sizing: border-box; /* Учитывает границы и отступы в общей высоте */
+        z-index: 99; /* Чтобы контейнер был поверх других элементов */
+        display: none; /* Изначально скрыто */
+        text-align: center;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.555);
+        
+    }
+
+    .select-items div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        height: 30px;
+        margin-top: 5px;
+        cursor: pointer;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.555);
+        
+    }
+
+    .select-items div:hover {
+        background-color: #18ce00;
+    }
+
+}

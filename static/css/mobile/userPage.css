@@ -1,0 +1,42 @@
+/* Стили для устройств с шириной экрана менее 768px (мобильные устройства) */
+@media (max-width: 500px) {
+    
+    
+    
+    .navContainer{
+       
+        width: 100%;
+        
+    }
+    /*Контейнер ввода*/
+    .Container-Input {
+        width: 100%;
+        height: 30vh;
+    }
+    
+    .form-Input {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .form-Input textarea {
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 20px; 
+    }
+
+    .form-Input textarea:last-child {
+        margin-bottom: 0;
+    }
+
+    /*Контейнер кнопок*/
+    .Container-Button {
+        width: 78%;
+    }
+    
+    .ContenToDay{
+        width: 100%;
+        grid-template-columns: 50% 50%;
+        font-size: 18px;
+    }
+
+}

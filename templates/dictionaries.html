@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pc/dict.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile/dictionaries.css')}}">
+    <title>Словари</title>
+</head>
+<body>
+    <br>
+    <div class="nav">
+        <div class="navContainer">
+            <div class="navHref" onclick="activDictonaries()">CЛОВАРИ</div>
+            <div class="navHref" onclick="">ПРАКТИКА</div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    
+    {% for key, value in dictionary.items() %}
+        <h2>{{ key }}</h2>
+        <div class="pc">
+            <div class="ContenToDay">
+                {% for i in value %}
+                    <span>{{i[0]}}</span>
+                    <span>{{i[1]}}</span>
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+    
+
+    <script src="{{ url_for('static', filename='js/dictionaries.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body{
+    background-color: #121214;
+    height: 100%;
+    color: white;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navContainer{
+    
+    width: 800px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+}
+.navHref{
+    width: 100%;
+}
+.navHref:hover{
+    color: aqua;
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+}
+.pc{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContenToDay{
+    text-align: center;
+    width: 800px;
+    min-height: 50px;
+    background-color: #252427;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 24px;
+}
+span{
+    padding: 10px;
+    color: #dadada;
+}

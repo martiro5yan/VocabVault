@@ -1,0 +1,156 @@
+body{
+    background-color: #121214;
+    height: 100%;
+}
+hr {
+    border: none; /* Убираем стандартную границу */
+    height: 1px; /* Высота линии */
+    background-color: rgb(255, 255, 255); /* Цвет линии */
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navContainer{
+    
+    width: 800px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+}
+.navHref{
+    width: 100%;
+}
+.navHref:hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+.Container-Input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    flex-direction: column;
+}
+.content{
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #121214;
+    color: #dadada;
+}
+.form-Input {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin-top: 100px;
+}
+
+.form-Input textarea {
+    background-color: #252427;
+    border-style: inset;
+    border-color: aqua;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    height: 50px;
+    margin-bottom: 20px; /* Увеличенное расстояние между инпутами */
+    border-radius: 10px;
+    border-style: none;
+    resize: none
+    /* box-shadow: 0px 5px 5px rgb(0, 0, 0); Внутренняя тень */
+}
+.form-Input textarea:last-child {
+    margin-bottom: 20px;
+}
+textarea:focus {
+    outline-color: aqua;
+    outline-style: solid;
+    outline-width: thin;
+    box-shadow: 0px 0px 10px rgb(0, 255, 255); /* Внутренняя тень */  
+}
+textarea:hover{
+    outline-color: aqua;
+    outline-style: solid;
+    outline-width: thin;
+    box-shadow: 0px 0px 10px rgb(0, 255, 255);
+}
+
+.Container-Button {
+    width: 300px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 50% 50%; /* Пропорции столбцов */
+    justify-content: center; /* Центрирование по горизонтали */
+    gap: 5px; /* Расстояние между элементами */
+    margin-top: 20px;
+    text-align: center; /* Центрирование текста по центру кнопок */  
+}
+.Container-Button button {
+    height: 35px;
+    border-radius: 20px;
+    border-style: none;
+    outline-style: solid;
+    outline-color: aqua;
+    outline-width: thin;
+    color: aqua;
+    background-color: #121214;
+    
+}
+select:hover,
+button:hover,
+select:focus,
+button:focus{
+    box-shadow: 0px 0px 15px rgb(0, 255, 255);
+}
+
+select{
+    margin-top: 20px;
+    text-align: center;
+    height: 35px;
+    width: 310px;
+    border-radius: 20px;
+    background-color: #121214;
+    border-style: none;
+    outline-style: solid;
+    outline-color: aqua;
+    outline-width: thin;
+    font-size: 20px;
+    color: aqua;
+    appearance: none;
+}
+
+option{
+    background-color: #252427;
+    color: white;
+    font-size: 16px;
+}
+
+
+
+
+
+.pc{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContenToDay{
+    text-align: center;
+    width: 800px;
+    min-height: 50px;
+    background-color: #252427;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 24px;
+}
+span{
+    padding: 10px;
+    color: #dadada;
+}

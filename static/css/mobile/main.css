@@ -1,0 +1,17 @@
+/* Стили для устройств с шириной экрана менее 768px (мобильные устройства) */
+@media (max-width: 500px) {
+    
+    button {
+        width: 60%;
+        height: 35px;
+        
+    }
+
+    input{
+        padding: 5px;
+        width: 80%;
+        height: 25px;
+        font-size: 16px;
+    }
+
+}

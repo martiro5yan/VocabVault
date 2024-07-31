@@ -1,0 +1,72 @@
+body{
+    background-color: #121214;
+}
+.Container-Input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Устанавливает высоту контейнера на весь экран */
+    
+}
+.row {
+    width: 90%;
+    display: flex;
+    flex-direction: column; /* Выровнять кнопки вертикально */
+    align-items: center;
+}
+button {
+    width: 250px;
+    height: 35px;
+    border-style: none;
+    border-radius: 20px;
+    outline-style: solid;
+    outline-color: #00ffff;
+    outline-width: thin;
+    color: aqua;
+    background-color: #121214;
+    margin: 10px 0;
+}
+.Registration-Form,
+.Login-Form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    display: none; /* Скрыто по умолчанию */
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    text-shadow: black;
+    font-size: 16px;
+}
+
+input{
+    padding: 5px;
+    width: 300px;
+    height: 25px;
+    border-style: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+input:focus {
+    outline-color: aqua;
+    outline-style: solid;
+    outline-width: thin;
+    box-shadow: 0px 0px 10px rgb(0, 255, 255); /* Внутренняя тень */  
+    
+}
+::placeholder{
+    font-size: 18px;
+    text-align: center;
+}
+
+button:hover{
+    box-shadow: 0px 0px 10px rgb(0, 255, 255); /* Внутренняя тень */
+}
