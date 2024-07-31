@@ -2,10 +2,10 @@
 ## Установка
 
 ### Клонируйте репозиторий:
-`git clone https://github.com/yourusername/vocabulary-vault.git`
+```git clone https://github.com/yourusername/vocabulary-vault.git```
 
 ### Установите зависимости:
-`pip install -r requirements.txt`
+```pip install -r requirements.txt```
 
 ### Настройте базу данных:
 Убедитесь, что PostgreSQL установлен и работает.
@@ -14,7 +14,7 @@
 
 
 ### Запустите сервер Flask:
-`python app.py`
+```python app.py```
 
 ### Откройте веб-браузер и перейдите по адресу:
 `http://127.0.0.1:5000/`
